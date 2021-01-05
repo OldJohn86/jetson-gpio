@@ -11,9 +11,9 @@ def main():
     try:
         while True:
             GPIO.output(LED_Pin, GPIO.HIGH)
-            time.sleep(2)
+            time.sleep(0.1)
             GPIO.output(LED_Pin, GPIO.LOW)
-            time.sleep(2)
+            time.sleep(0.1)
     finally:
         GPIO.cleanup()
 
